@@ -161,7 +161,64 @@
               </div>
             </div>
           </div>
+          <div
+            class="card w-72 h-full bg-base-100 shadow-xl bg-blue-900 pt-2 rounded-xl row-span-2 px-4"
+          >
+            <div class="card-body text-white">
+              <h2 class="card-title font-bold text-3xl text-center pb-10">
+                Budget
+              </h2>
+              <label for="">
+                <span class="text-2xl px-2">Per Player</span>
 
+                <input
+                  class="h-10 w-32 pl-3 border border-white outline-none bg-blue-900"
+                  type="number"
+                />
+              </label>
+              <div class="pb-3 pt-5 text-center">
+                <button
+                  class="w-64 h-10 text-white font-semibold text-2xl bg-slate-900 rounded-xl hover:bg-cyan-600"
+                >
+                  Calculate
+                </button>
+              </div>
+
+              <div class="flex space-x-5 py-5">
+                <h1 class="text-2xl">Player Expenses</h1>
+                <h1 class="text-2xl">$5000</h1>
+              </div>
+              <label for="">
+                <span class="text-2xl pr-3">Manager</span>
+
+                <input
+                  class="h-10 w-32 pl-3 border border-white outline-none bg-blue-900"
+                  type="number"
+                />
+              </label>
+              <br />
+              <br />
+              <label for="">
+                <span class="text-2xl pr-10">Coach</span>
+
+                <input
+                  class="h-10 w-32 pl-3 border border-white outline-none bg-blue-900"
+                  type="number"
+                />
+              </label>
+              <div class="pt-10 text-center">
+                <button
+                  class="w-64 h-10 text-white font-semibold text-2xl bg-slate-900 rounded-xl hover:bg-cyan-600"
+                >
+                  Calculate Total
+                </button>
+              </div>
+              <div class="flex space-x-20 py-10">
+                <h1 class="text-2xl">Total Cost</h1>
+                <h1 class="text-2xl">$5000</h1>
+              </div>
+            </div>
+          </div>
           <div class="card w-72 bg-base-100 shadow-2xl">
             <figure>
               <img
@@ -185,5 +242,6 @@
         </div>
       </section>
     </main>
+    <script src="calculate.js"></script>
   </body>
 </html>

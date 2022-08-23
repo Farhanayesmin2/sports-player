@@ -67,6 +67,8 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
 
     const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
    
+    getTheInnerTextValue('total-cost');
+    setTheValueInnerText('total-cost', theTotalCost)
    // console.log(theTotalCost);
     
 })

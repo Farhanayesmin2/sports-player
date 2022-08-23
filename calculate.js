@@ -28,7 +28,7 @@ document.getElementById('player-container').addEventListener("click", function (
         const disabled = event.target.setAttribute("disabled", "true");
         // Change the color of disable button
      if (disabled != false) {
-         event.target.style.backgroundColor = "rgb(220 38 38)";
+         event.target.style.backgroundColor = "rgb(203 213 225)";
      }
     }   
     });

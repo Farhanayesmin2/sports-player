@@ -14,12 +14,21 @@ function nameEveryPlayer() {
     return totalPayer;
 }
 
- function setTheValueInnerText(number) {
-    const setValueNumber = document.getElementById(number);
-    const setValueNumberString = setValueNumber.innerText;
-    const setTheTextNumber = parseInt(setValueNumberString);
-    return setTheTextNumber;
+ function getTheValue(number) {
+    const getValueNumber = document.getElementById(number);
+    const getValueNumberString = getValueNumber.value;
+    const getTheNumber = parseInt(getValueNumberString);
+    return getTheNumber;
 } 
+function getTheInnerTextValue(innerValue) {
+    const getValueInnerText = document.getElementById(innerValue);
+    const getValueInnerTextString = getValueInnerText.innerText;
+    const getTheTextValue = parseInt(getValueInnerTextString);
+    return getTheTextValue;
+} 
+
+
+
 function setTheValueInnerText(number, newValue) {
     const setValueNumber = document.getElementById(number);
     const setValueNumberString = setValueNumber.innerText;
@@ -34,8 +43,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // called the function in calculate button
    const player= nameEveryPlayer();
   
-    const playerExpenses = document.getElementById('player-expenses'); 
-    
+    const playerExpenses = getTheInnerTextValue('player-expenses'); 
+   
     const playerExpensesTotal = setTheValueInnerText('player-expenses', player);
 // 
  /*    const manager = setTheValueInnerText('manager-field');
@@ -45,6 +54,19 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     console.log(theTotalCost); */
 })
 
-document.getElementById('total-calculate-btn').addEventListener('click', function(){
+document.getElementById('total-calculate-btn').addEventListener('click', function () {
+
+  // get the all player cost
+  const playerExpensesTotalAmount =getTheInnerTextValue('player-expenses'); 
+    
+    const manager = getTheValue('manager-field');
+   
+    const coach = getTheValue('coach-field');
+   
+    const addTheTwoValue = manager + coach;
+
+    const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
+   
+    console.log(theTotalCost);
     
 })

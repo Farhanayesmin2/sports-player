@@ -67,6 +67,6 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
 
     const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
    
-    console.log(theTotalCost);
+   // console.log(theTotalCost);
     
 })

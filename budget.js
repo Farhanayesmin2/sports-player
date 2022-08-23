@@ -70,12 +70,10 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
     const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
    // called the  getTheInnerTextValue(); for get number value.
     getTheInnerTextValue('total-cost');
-    // set the number value that's whay called setTheValueInnerText(number, newValue) . 
+    // set the number value that's why called setTheValueInnerText(number, newValue) . 
     setTheValueInnerText('total-cost', theTotalCost)
-   // Shpw the alert text for 
-   /* if (typeof manager != 'number' ) {
-    return alert("Can't select more string");
-   } */
+   // Show the alert text for invalid or empty number,that's why called the manager and coach id. 
+   
     const managerInput = document.getElementById('manager-field');
     const coachInput = document.getElementById('coach-field');
 
@@ -84,11 +82,3 @@ document.getElementById('total-calculate-btn').addEventListener('click', functio
     return alert("Please Give The Correct Amount.");
     }
 })
-
-
-/* if (typeof manager != 'number' ) {
-    return alert("Can't select more string");
-}
-else if(manager <0) {
-    return alert("Can't select more string");
-} */

@@ -42,43 +42,30 @@ function setTheValueInnerText(number, newValue) {
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
     // called the  nameEveryPlayer() function in calculate button.
-   const player= nameEveryPlayer();
-  // called the  getTheInnerTextValue() function.
-    const playerExpenses = getTheInnerTextValue('player-expenses'); 
-   // here, set the innerText value setTheValueInnerText(number, newValue).
+    const player = nameEveryPlayer();
+    // called the  getTheInnerTextValue() function.
+    const playerExpenses = getTheInnerTextValue('player-expenses');
+    // here, set the innerText value setTheValueInnerText(number, newValue).
     const playerExpensesTotal = setTheValueInnerText('player-expenses', player);
-// Called id="per-player" for alert if input field in not a valid number.
-    const alertTextPerPlayerInput = document.getElementById('per-player');
-if(isNaN( alertTextPerPlayerInput) )  {
-    return alert("Please Give The Correct Amount.");
-    }
 })
 
 // Create a function for event Handler for Total calculate Button.
 document.getElementById('total-calculate-btn').addEventListener('click', function () {
-
-  // Get the all player Cost value for addition for total amount
-  const playerExpensesTotalAmount =getTheInnerTextValue('player-expenses'); 
+        // Get the all player Cost value for addition for total amount
+        const playerExpensesTotalAmount = getTheInnerTextValue('player-expenses');
     
-    // called the getTheValue() function for manager input field and coach input field value for addition for total amount.
-    const manager = getTheValue('manager-field');
+        // called the getTheValue() function for manager input field and coach input field value for addition for total amount.
+        const manager = getTheValue('manager-field');
    
-    const coach = getTheValue('coach-field');
+        const coach = getTheValue('coach-field');
    
-    const addTheTwoValue = manager + coach;
-// Addition the total amount.
-    const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
-   // called the  getTheInnerTextValue(); for get number value.
-    getTheInnerTextValue('total-cost');
-    // set the number value that's why called setTheValueInnerText(number, newValue) . 
-    setTheValueInnerText('total-cost', theTotalCost)
-   // Show the alert text for invalid or empty number,that's why called the manager and coach id. 
-   
-    const managerInput = document.getElementById('manager-field');
-    const coachInput = document.getElementById('coach-field');
+        const addTheTwoValue = manager + coach;
+        // Addition the total amount.
+        const theTotalCost = playerExpensesTotalAmount + addTheTwoValue;
+        // called the  getTheInnerTextValue(); for get number value.
+        getTheInnerTextValue('total-cost');
+        // set the number value that's why called setTheValueInnerText(number, newValue) . 
+        setTheValueInnerText('total-cost', theTotalCost)
 
-    // show the alert text when give wrong number
- if(isNaN( managerInput) ||  isNaN(coachInput) )  {
-    return alert("Please Give The Correct Amount.");
-    }
+ 
 })
